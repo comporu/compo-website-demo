@@ -1,0 +1,32 @@
+default:
+    extensions:
+        Behat\MinkExtension:
+            goutte: ~
+            sessions:
+                default:
+                    symfony2: ~
+        Behat\Symfony2Extension:
+          kernel:
+            env: test
+            debug: true
+
+        emuse\BehatHTMLFormatter\BehatHTMLFormatterExtension:
+          name: html
+          renderer: Twig
+          file_name: index
+          print_args: true
+          print_outp: true
+          loop_break: true
+
+    formatters:
+        html:
+            output_path: %paths.base%/build/behat
+        pretty:
+            output_decorate: true
+    suites:
+        app_features:
+            paths:    [ %paths.base%/features/features ]
+            contexts:
+                - FeatureContext:
+                    container: '@service_container'
+

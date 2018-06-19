@@ -1,0 +1,5 @@
+_dev:
+    resource: "@CompoCoreBundle/Resources/config/app/routing_dev.yml"
+
+_main:
+    resource: routing.yml

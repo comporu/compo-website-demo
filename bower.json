@@ -1,0 +1,12 @@
+{
+    "name": "website",
+    "dependencies": {
+        "bootstrap": "^3.3.7",
+        "codemirror": "latest",
+        "jquery-smoothscroll": "latest",
+        "fancybox": "latest",
+        "jQuery.mmenu": "6.1.7"
+    },
+    "license": "MIT",
+    "private": true
+}

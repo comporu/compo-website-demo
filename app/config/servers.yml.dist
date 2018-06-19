@@ -1,0 +1,46 @@
+website:
+  host: website.compo-symfony-cms.ru
+  user: website
+  http_user: website
+  deploy_path: /home/website/www/
+  password: website
+  bin_php: "php"
+  repository: "git@github.com:comporu/compo-website-demo.git"
+  stage: "stage"
+  parameters:
+      DATABASE_DRIVER:   pdo_mysql
+      DATABASE_HOST:     127.0.0.1
+      DATABASE_PORT:     ~
+      DATABASE_NAME:     website
+      DATABASE_USER:     website
+      DATABASE_PASSWORD: website
+
+      MAILER_TRANSPORT:  smtp
+      MAILER_HOST:       127.0.0.1
+      MAILER_USER:       ~
+      MAILER_PASSWORD:   ~
+
+      CACHE_DRIVER:      apcu
+
+      FRAMEWORK_SECRET:  websitewebsitewebsitewebsite
+
+      SONATA_MEDIA_CDN_HOST:  '/uploads/media'
+
+      SERVER_NAME: "website.compo-symfony-cms.ru"
+      SERVER_SCHEME: "https"
+      SERVER_ACCESS_LOG:  "/var/log/nginx/website.access.log"
+      SERVER_ERROR_LOG:  "/var/log/nginx/website.error.log"
+      SERVER_FASTCGI_PASS: "unix:/run/php/php7.2-fpm.sock"
+      SERVER_ROOT: ~
+      SERVER_USER: website
+      SERVER_PASSWORD: website
+      FOS_ELASTICA_INDEX_NAME: website
+      FOS_ELASTICA_HOST: localhost
+      FOS_ELASTICA_PORT: 9200
+      MEMCACHED_HOST: localhost
+      MEMCACHED_PORT: 11211
+      COOKIE_DOMAIN: .website.compo-symfony-cms.ru
+      SSL_CERTIFICATE: "/etc/letsencrypt/live/website.compo-symfony-cms.ru/fullchain.pem"
+      SSL_CERTIFICATE_KEY: "/etc/letsencrypt/live/website.compo-symfony-cms.ru/privkey.pem"
+      SSL_TRUSTED_CERTIFICATE: "/etc/letsencrypt/live/website.compo-symfony-cms.ru/chain.pem"
+      PAGESPEED: 'on'

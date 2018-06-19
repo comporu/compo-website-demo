@@ -1,0 +1,21 @@
+[{{ server_user }}]
+pm = static
+pm.start_servers = 1
+pm.min_spare_servers = 1
+pm.max_children = 16
+pm.max_spare_servers = 2
+pm.process_idle_timeout = 1000s
+pm.max_requests = 2000
+pm.status_path = /status
+
+php_admin_value[display_errors] = Off
+php_admin_value[log_errors] = On
+
+listen = {{ server_fastcgi_pass }}
+listen.mode = 0660
+listen.owner = {{ server_user }}
+listen.group = www-data
+
+user = {{ server_user }}
+group = {{ server_user }}
+chdir = /

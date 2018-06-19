@@ -1,0 +1,2 @@
+imports:
+    - { resource: '@CompoCoreBundle/Resources/config/app/config.yml' }

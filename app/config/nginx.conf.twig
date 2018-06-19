@@ -1,0 +1,88 @@
+{% import "@CompoCore/Nginx/nginx_macro.html.twig" as nginx %}
+
+# http://www
+# http://
+server {
+    # с www
+    server_name www.{{ server_name|replace({'www.': ''}) }} {{ server_name|replace({'www.': ''}) }};
+
+    listen 80;
+
+    root {{ server_root }};
+
+    {{ nginx.location_well_known() }}
+    {{ nginx.location_robots_txt() }}
+
+    location / {
+        {{ nginx.rewrite_to_domain('https://' ~ server_name|replace({'www.': ''})) }}
+    }
+}
+
+# https://www
+server {
+    server_name www.{{ server_name|replace({'www.': ''}) }};
+
+    listen 443 ssl http2;
+
+    root {{ server_root }};
+
+    {{ nginx.ssl(ssl_certificate, ssl_certificate_key, ssl_trusted_certificate) }}
+
+    {{ nginx.location_well_known() }}
+    {{ nginx.location_robots_txt() }}
+
+    location / {
+        {{ nginx.rewrite_to_domain('https://' ~ server_name|replace({'www.': ''})) }}
+    }
+}
+
+# https://
+server {
+    server_name {{ server_name|replace({'www.': ''}) }};
+
+    listen 443 ssl http2;
+
+    root {{ server_root }};
+
+    access_log  {{ server_access_log }};
+    error_log  {{ server_error_log }};
+
+    {{ nginx.ssl(ssl_certificate, ssl_certificate_key, ssl_trusted_certificate) }}
+
+
+    {% if pagespeed == 'on' %}
+        {#
+        {{ nginx.pagespeed(pagespeed) }}
+        #}
+        pagespeed {{ pagespeed }};
+        pagespeed Disallow "*/admin/*";
+        pagespeed Disallow "*.svg";
+        pagespeed FileCachePath "/var/cache/pagespeed/";
+        pagespeed FileCacheSizeKb            102400;
+        pagespeed FileCacheCleanIntervalMs   3600000;
+        pagespeed FileCacheInodeLimit        500000;
+        pagespeed EnableFilters local_storage_cache,extend_cache,prioritize_critical_css,convert_jpeg_to_progressive,recompress_jpeg,rewrite_javascript,rewrite_css,collapse_whitespace;
+        pagespeed DisableFilters convert_jpeg_to_webp,combine_javascript,combine_css;
+    {% endif %}
+
+    {{ nginx.location_well_known() }}
+    {{ nginx.location_robots_txt() }}
+
+    {{ nginx.location_hidden_to_404() }}
+
+    {{ nginx.location_assetic_php_to_404() }}
+
+    {{ nginx.location_root() }}
+
+    {{ nginx.location_static() }}
+
+    {{ nginx.location_phpmyadmin(auth_basic_user_file, server_fastcgi_pass) }}
+
+    {{ nginx.location_build(server_root, auth_basic_user_file, server_fastcgi_pass) }}
+
+    {{ nginx.location_app_dev(auth_basic_user_file, server_fastcgi_pass) }}
+
+    {{ nginx.location_app(server_fastcgi_pass) }}
+
+    {{ nginx.location_php(server_fastcgi_pass) }}
+}

@@ -1,0 +1,107 @@
+{
+    "name": "comporu/compo-website-demo",
+    "description": "Website demo project",
+    "keywords": [
+        "compo",
+        "symfony",
+        "sonata"
+    ],
+    "license": "proprietary",
+    "homepage": "https://comporu.ru",
+    "support": {
+        "email": "info@compo.ru",
+        "issues": "https://github.com/comporu/compo-website-demo/issues",
+        "source": "https://github.com/comporu/compo-website-demo"
+    },
+    "authors": [
+        {
+            "name": "Compo.ru",
+            "email": "info@compo.ru",
+            "homepage": "https://compo.ru"
+        }
+    ],
+    "type": "project",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "CompoWebsiteDemo\\": "src/CompoWebsiteDemo"
+        },
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CompoWebsiteDemo\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "comporu/compo-core": "3.3.x-dev"
+    },
+    "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.0",
+        "friendsofphp/php-cs-fixer": "^2.7",
+        "symfony/dotenv": "^4.0",
+        "symfony/phpunit-bridge": "^3.4"
+    },
+    "scripts": {
+        "compo-update-dev": [
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Compo\\CoreBundle\\Composer\\CreateConfigs::process",
+            "Compo\\CoreBundle\\Composer\\BowerInstall::process",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Compo\\CoreBundle\\Composer\\FosJsRoutingDump::process",
+            "Compo\\CoreBundle\\Composer\\MopaBootstrapFix::process",
+            "Compo\\CoreBundle\\Composer\\SyliusInstall::process",
+            "Compo\\CoreBundle\\Composer\\AsseticDump::process",
+            "Compo\\CoreBundle\\Composer\\CacheFlush::process"
+        ],
+        "compo-update-prod": [
+            "Compo\\CoreBundle\\Composer\\CacheClearProd::process",
+            "Compo\\CoreBundle\\Composer\\AsseticDumpProd::process"
+        ],
+        "compo-update-core": [
+            "Compo\\CoreBundle\\Composer\\CompoCoreUpdate::process"
+        ],
+        "compo-update": [
+            "@compo-update-dev",
+            "@compo-update-prod",
+            "@compo-update-core"
+        ],
+        "post-install-cmd": [
+            "@compo-update-dev"
+        ],
+        "post-update-cmd": [
+            "@compo-update-dev"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": false,
+        "process-timeout": 3600,
+        "secure-http": true,
+        "preferred-install": {
+            "comporu/*": "source",
+            "*": "dist"
+        }
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+        "symfony-tests-dir": "tests",
+        "symfony-assets-install": "relative",
+        "symfony-cache-warmup": "yes",
+        "bower": [
+            "./bower.json",
+            "./vendor/comporu/compo-core/src/Compo/CoreBundle/Resources/public/js/app/bower.json",
+            "./vendor/comporu/compo-core/src/Compo/FeedbackBundle/Resources/public/js/app/bower.json",
+            "./vendor/comporu/compo-core/src/Compo/SeoBundle/Resources/public/js/app/bower.json"
+        ]
+    }
+}

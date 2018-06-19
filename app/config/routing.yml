@@ -1,0 +1,2 @@
+compo_core:
+    resource: "@CompoCoreBundle/Resources/config/app/routing.yml"

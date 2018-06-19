@@ -1,48 +1,73 @@
-# Cache and logs (Symfony2)
-/app/cache/*
-/app/logs/*
-!app/cache/.gitkeep
-!app/logs/.gitkeep
+/docs/_build/
 
-# Email spool folder
-/app/spool/*
+.env
 
-# Cache, session files and logs (Symfony3)
-/var/cache/*
-/var/logs/*
-/var/sessions/*
-!var/cache/.gitkeep
-!var/logs/.gitkeep
-!var/sessions/.gitkeep
+###> compo-dev-kit ###
+# IDE
+/.idea/
+
+# Vagrant
+/.vagrant/
 
 # Parameters
-/app/config/parameters.yml
-/app/config/parameters.ini
+/app/config/parameters*.yml
 
-# Managed by Composer
-/app/bootstrap.php.cache
-/var/bootstrap.php.cache
-/bin/*
-!bin/console
-!bin/symfony_requirements
-/vendor/
+# Deployer servers
+/app/config/servers.yml
+/app/config/ansible_hosts.yml
 
-# Assets and user uploads
-/web/bundles/
-/web/uploads/
+# HTTP server configs
+/app/config/apache.conf
+/app/config/nginx.conf
+/app/config/php-fpm.conf
+/app/config/htpasswd.conf
 
-# PHPUnit
-/app/phpunit.xml
-/phpunit.xml
-
-# Build data
+# Build
 /build/
 
-# Composer PHAR
-/composer.phar
+# Composer vendor
+/vendor/
 
-# Backup entities generated with doctrine:generate:entities command
-**/Entity/*~
+# Var
+/var/*
+!var/SymfonyRequirements.php
+!var/.gitkeep
 
-# Embedded web-server pid file
+# Assetic
+/web/assetic
+/web/bundles
+/web/vendor
+/web/js
+/web/build
+
+# User data
+/web/uploads
+/web/media
+/web/userfiles
+
+# Feeds
+/web/sitemap*
+/web/yandex.market*
+/web/google.merchant*
+
+# Robots.txt
+/web/robots.txt
+
+# Other
+/node_modules
+/ubuntu-xenial-16.04-cloudimg-console.log
 /.web-server-pid
+/composer-locaload.json
+/.php_cs.cache
+/yarn-error.log
+*~
+
+# CSS preprocessor cache
+.sass-cache
+
+# Desktop Service Store
+.DS_Store
+
+# .well-known
+.well-known
+###< compo-dev-kit ###
