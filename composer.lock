@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "faf2a6285a645985e325b84556647f6b",
+    "content-hash": "c8b8adcc2c4bc308873f7a35176bf6fa",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -614,12 +614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/comporu/compo-core.git",
-                "reference": "cf4cb4021c385310a62099949a5d704c127d193f"
+                "reference": "4d958b43beaf1c8f2e752adc9086eaed964df90d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/comporu/compo-core/zipball/cf4cb4021c385310a62099949a5d704c127d193f",
-                "reference": "cf4cb4021c385310a62099949a5d704c127d193f",
+                "url": "https://api.github.com/repos/comporu/compo-core/zipball/4d958b43beaf1c8f2e752adc9086eaed964df90d",
+                "reference": "4d958b43beaf1c8f2e752adc9086eaed964df90d",
                 "shasum": ""
             },
             "require": {
@@ -721,7 +721,7 @@
                 "sonata",
                 "symfony"
             ],
-            "time": "2018-06-19T12:38:42+00:00"
+            "time": "2018-06-28T10:35:27+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -812,16 +812,16 @@
         },
         {
             "name": "debril/feed-io",
-            "version": "v4.3.0",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alexdebril/feed-io.git",
-                "reference": "54cc6d5d44f9e163b5089495f87ff7850a2ce952"
+                "reference": "0a64aeb2778d11ba889b59445e3f90d7694c448f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alexdebril/feed-io/zipball/54cc6d5d44f9e163b5089495f87ff7850a2ce952",
-                "reference": "54cc6d5d44f9e163b5089495f87ff7850a2ce952",
+                "url": "https://api.github.com/repos/alexdebril/feed-io/zipball/0a64aeb2778d11ba889b59445e3f90d7694c448f",
+                "reference": "0a64aeb2778d11ba889b59445e3f90d7694c448f",
                 "shasum": ""
             },
             "require": {
@@ -868,7 +868,7 @@
                 "news",
                 "rss"
             ],
-            "time": "2018-05-29T11:39:36+00:00"
+            "time": "2018-06-22T16:58:34+00:00"
         },
         {
             "name": "debril/rss-atom-bundle",
@@ -2133,16 +2133,16 @@
         },
         {
             "name": "fabpot/goutte",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/Goutte.git",
-                "reference": "395f61d7c2e15a813839769553a4de16fa3b3c96"
+                "reference": "3f0eaf0a40181359470651f1565b3e07e3dd31b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/395f61d7c2e15a813839769553a4de16fa3b3c96",
-                "reference": "395f61d7c2e15a813839769553a4de16fa3b3c96",
+                "url": "https://api.github.com/repos/FriendsOfPHP/Goutte/zipball/3f0eaf0a40181359470651f1565b3e07e3dd31b8",
+                "reference": "3f0eaf0a40181359470651f1565b3e07e3dd31b8",
                 "shasum": ""
             },
             "require": {
@@ -2184,7 +2184,7 @@
             "keywords": [
                 "scraper"
             ],
-            "time": "2017-11-19T08:45:40+00:00"
+            "time": "2018-06-29T15:13:57+00:00"
         },
         {
             "name": "fig/link-util",
@@ -2562,6 +2562,56 @@
                 "User management"
             ],
             "time": "2018-03-08T08:59:27+00:00"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "d3ed4cc37051c1ca52d22d76b437d14809fc7e0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d3ed4cc37051c1ca52d22d76b437d14809fc7e0d",
+                "reference": "d3ed4cc37051c1ca52d22d76b437d14809fc7e0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.0 || ^5.0",
+                "squizlabs/php_codesniffer": "^1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2017-08-15T16:48:10+00:00"
         },
         {
             "name": "gedmo/doctrine-extensions",
@@ -3449,16 +3499,16 @@
         },
         {
             "name": "jms/serializer-bundle",
-            "version": "2.4.1",
+            "version": "2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSSerializerBundle.git",
-                "reference": "73bad761515fabae3cb52bde7c73484081a91118"
+                "reference": "22eb9a2f7983394b0770237ca91e879eb2a4b4a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/73bad761515fabae3cb52bde7c73484081a91118",
-                "reference": "73bad761515fabae3cb52bde7c73484081a91118",
+                "url": "https://api.github.com/repos/schmittjoh/JMSSerializerBundle/zipball/22eb9a2f7983394b0770237ca91e879eb2a4b4a6",
+                "reference": "22eb9a2f7983394b0770237ca91e879eb2a4b4a6",
                 "shasum": ""
             },
             "require": {
@@ -3498,7 +3548,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache-2.0"
+                "MIT"
             ],
             "authors": [
                 {
@@ -3519,39 +3569,39 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2018-05-25T10:56:25+00:00"
+            "time": "2018-06-19T13:39:25+00:00"
         },
         {
             "name": "jms/translation-bundle",
-            "version": "1.4.1",
+            "version": "1.4.3",
             "target-dir": "JMS/TranslationBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "a5f47128fdd1665206ebeef4be5d24cf9d87269a"
+                "reference": "64c2a7d1ad4e61987bc79fbfb59067fc9460dc21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/a5f47128fdd1665206ebeef4be5d24cf9d87269a",
-                "reference": "a5f47128fdd1665206ebeef4be5d24cf9d87269a",
+                "url": "https://api.github.com/repos/schmittjoh/JMSTranslationBundle/zipball/64c2a7d1ad4e61987bc79fbfb59067fc9460dc21",
+                "reference": "64c2a7d1ad4e61987bc79fbfb59067fc9460dc21",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^1.4 || ^2.0 || ^3.0",
+                "nikic/php-parser": "^1.4 || ^2.0 || ^3.0 || ^4.0",
                 "php": "^5.3.3 || ^7.0",
-                "symfony/console": "^2.3 || ^3.0",
-                "symfony/framework-bundle": "^2.3 || ^3.0",
-                "symfony/validator": "^2.3 || ^3.0",
+                "symfony/console": "^2.3 || ^3.0 || ^4.0",
+                "symfony/framework-bundle": "^2.3 || ^3.0 || ^4.0",
+                "symfony/validator": "^2.3 || ^3.0 || ^4.0",
                 "twig/twig": "^1.27 || ^2.0"
             },
             "require-dev": {
-                "matthiasnoback/symfony-dependency-injection-test": "^0.7.6",
+                "matthiasnoback/symfony-dependency-injection-test": "^1.2",
                 "nyholm/nsa": "^1.0.1",
-                "phpunit/phpunit": "4.8.27",
+                "phpunit/phpunit": "^4.8 || ^5.0",
                 "psr/log": "^1.0",
-                "sensio/framework-extra-bundle": "^2.3 || ^3.0",
-                "symfony/expression-language": "^2.6 || ^3.0",
-                "symfony/symfony": "^2.3 || ^3.0"
+                "sensio/framework-extra-bundle": "^2.3 || ^3.0 || ^4.0",
+                "symfony/expression-language": "^2.6 || ^3.0 || ^4.0",
+                "symfony/symfony": "^2.3 || ^3.0 || ^4.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -3586,20 +3636,20 @@
                 "ui",
                 "webinterface"
             ],
-            "time": "2018-02-09T19:28:20+00:00"
+            "time": "2018-06-28T05:04:47+00:00"
         },
         {
             "name": "knplabs/gaufrette",
-            "version": "v0.5.0",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/Gaufrette.git",
-                "reference": "2f228650fd4cc50c3d3c1d6541546ffc169b2240"
+                "reference": "a7c71edef4528d9881f534515f9061660255afe3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/2f228650fd4cc50c3d3c1d6541546ffc169b2240",
-                "reference": "2f228650fd4cc50c3d3c1d6541546ffc169b2240",
+                "url": "https://api.github.com/repos/KnpLabs/Gaufrette/zipball/a7c71edef4528d9881f534515f9061660255afe3",
+                "reference": "a7c71edef4528d9881f534515f9061660255afe3",
                 "shasum": ""
             },
             "require": {
@@ -3616,8 +3666,7 @@
                 "dropbox-php/dropbox-php": "*",
                 "google/apiclient": "~1.1.3",
                 "league/flysystem": "~1.0",
-                "microsoft/azure-storage": "~0.15.0",
-                "microsoft/windowsazure": "~0.4",
+                "microsoft/azure-storage-blob": "^1.0",
                 "mikey179/vfsstream": "~1.2.0",
                 "mongodb/mongodb": "^1.1",
                 "phpseclib/phpseclib": "^2.0",
@@ -3646,7 +3695,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -3676,7 +3725,7 @@
                 "filesystem",
                 "media"
             ],
-            "time": "2018-01-04T19:50:08+00:00"
+            "time": "2018-03-26T12:19:49+00:00"
         },
         {
             "name": "knplabs/knp-components",
@@ -4462,24 +4511,24 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.1.5",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce"
+                "reference": "35b8caf75e791ba1b2d24fec1552168d72692b12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
-                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/35b8caf75e791ba1b2d24fec1552168d72692b12",
+                "reference": "35b8caf75e791ba1b2d24fec1552168d72692b12",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": ">=5.5"
+                "php": ">=7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0|~5.0"
+                "phpunit/phpunit": "^6.5 || ^7.0"
             },
             "bin": [
                 "bin/php-parse"
@@ -4487,7 +4536,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -4509,7 +4558,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-02-28T20:30:58+00:00"
+            "time": "2018-06-03T11:33:10+00:00"
         },
         {
             "name": "nixsolutions/yandex-php-library",
@@ -5493,23 +5542,23 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v5.1.6",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "bf4940572e43af679aaa13be98f3446a1c237bd8"
+                "reference": "50e8b7292425957b8fd66887504430c89bcbd83c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/bf4940572e43af679aaa13be98f3446a1c237bd8",
-                "reference": "bf4940572e43af679aaa13be98f3446a1c237bd8",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/50e8b7292425957b8fd66887504430c89bcbd83c",
+                "reference": "50e8b7292425957b8fd66887504430c89bcbd83c",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "^2.2",
                 "symfony/config": "^3.3|^4.0",
                 "symfony/dependency-injection": "^3.3|^4.0",
-                "symfony/framework-bundle": "^3.3|^4.0",
+                "symfony/framework-bundle": "^3.4|^4.0",
                 "symfony/http-kernel": "^3.3|^4.0"
             },
             "require-dev": {
@@ -5519,6 +5568,8 @@
                 "symfony/dom-crawler": "^3.3|^4.0",
                 "symfony/expression-language": "^3.3|^4.0",
                 "symfony/finder": "^3.3|^4.0",
+                "symfony/monolog-bridge": "^3.0|^4.0",
+                "symfony/monolog-bundle": "^3.2",
                 "symfony/phpunit-bridge": "^3.3|^4.0",
                 "symfony/psr-http-message-bridge": "^0.3",
                 "symfony/security-bundle": "^3.3|^4.0",
@@ -5535,7 +5586,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.1.x-dev"
+                    "dev-master": "5.2.x-dev"
                 }
             },
             "autoload": {
@@ -5558,7 +5609,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2018-02-14T08:40:54+00:00"
+            "time": "2018-05-12T09:37:42+00:00"
         },
         {
             "name": "sensio/generator-bundle",
@@ -6677,23 +6728,23 @@
         },
         {
             "name": "sonata-project/media-bundle",
-            "version": "3.13.1",
+            "version": "3.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "f27869929af11e5e41a07e9c3bf0538f8edbc578"
+                "reference": "35635a16729f588df01259ac7c70490c547bb21a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/f27869929af11e5e41a07e9c3bf0538f8edbc578",
-                "reference": "f27869929af11e5e41a07e9c3bf0538f8edbc578",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/35635a16729f588df01259ac7c70490c547bb21a",
+                "reference": "35635a16729f588df01259ac7c70490c547bb21a",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/psr7": "^1.0",
                 "imagine/imagine": "^0.6 || ^0.7",
                 "jms/serializer-bundle": "^1.0 || ^2.0",
-                "knplabs/gaufrette": "^0.3 || ^0.4 || ^0.5",
+                "knplabs/gaufrette": "^0.3 || ^0.4 || ^0.5 || ^0.6",
                 "kriswallsmith/buzz": "^0.15 || ^0.16",
                 "php": "^5.6 || ^7.0",
                 "psr/log": "^1.0",
@@ -6797,7 +6848,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2018-05-25T20:31:22+00:00"
+            "time": "2018-06-26T22:19:49+00:00"
         },
         {
             "name": "sonata-project/notification-bundle",
@@ -8526,20 +8577,20 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "8eb567d8398ce31a402ea8db3e6b5b1faf121cbc"
+                "reference": "c36f8cb21b5f1661a14fdb8cef9cc611d54a3494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/8eb567d8398ce31a402ea8db3e6b5b1faf121cbc",
-                "reference": "8eb567d8398ce31a402ea8db3e6b5b1faf121cbc",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/c36f8cb21b5f1661a14fdb8cef9cc611d54a3494",
+                "reference": "c36f8cb21b5f1661a14fdb8cef9cc611d54a3494",
                 "shasum": ""
             },
             "require": {
-                "doctrine/common": "~2.4",
+                "doctrine/common": "~2.4@stable",
                 "ext-xml": "*",
                 "fig/link-util": "^1.0",
                 "php": "^5.5.9|>=7.0.8",
@@ -8677,7 +8728,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2018-05-25T13:16:49+00:00"
+            "time": "2018-06-25T12:29:33+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -8957,16 +9008,16 @@
         },
         {
             "name": "white-october/pagerfanta-bundle",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/whiteoctober/WhiteOctoberPagerfantaBundle.git",
-                "reference": "a4895420aace01cc2c78c22c501a9f464cf30961"
+                "reference": "3f97e71c9d3f75e7a6179aa82c863497bf298b2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/a4895420aace01cc2c78c22c501a9f464cf30961",
-                "reference": "a4895420aace01cc2c78c22c501a9f464cf30961",
+                "url": "https://api.github.com/repos/whiteoctober/WhiteOctoberPagerfantaBundle/zipball/3f97e71c9d3f75e7a6179aa82c863497bf298b2d",
+                "reference": "3f97e71c9d3f75e7a6179aa82c863497bf298b2d",
                 "shasum": ""
             },
             "require": {
@@ -9012,7 +9063,59 @@
                 "page",
                 "paging"
             ],
-            "time": "2018-05-21T08:36:13+00:00"
+            "time": "2018-06-20T09:32:42+00:00"
+        },
+        {
+            "name": "willdurand/faker-bundle",
+            "version": "1.4.1",
+            "target-dir": "Bazinga/Bundle/FakerBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willdurand/BazingaFakerBundle.git",
+                "reference": "f2feb720d83dda9e9022b67c7a1625a6e9df1742"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willdurand/BazingaFakerBundle/zipball/f2feb720d83dda9e9022b67c7a1625a6e9df1742",
+                "reference": "f2feb720d83dda9e9022b67c7a1625a6e9df1742",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "~1.3",
+                "php": ">=5.3",
+                "symfony/framework-bundle": "~2.3|~3.0|^4.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^4.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Bazinga\\Bundle\\FakerBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William DURAND",
+                    "email": "william.durand1@gmail.com"
+                }
+            ],
+            "description": "Put the awesome Faker lib into the DIC and populate your database with fake data.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2018-04-16T09:16:51+00:00"
         },
         {
             "name": "willdurand/hateoas",
@@ -9580,37 +9683,37 @@
         },
         {
             "name": "zendframework/zenddiagnostics",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/zendframework/ZendDiagnostics.git",
-                "reference": "d27aa064c5185c5830e917ffe48284b0995eed13"
+                "url": "https://github.com/zendframework/zend-diagnostics.git",
+                "reference": "bb03241c503fdf4d6d420e06653a8b65a10b239d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/ZendDiagnostics/zipball/d27aa064c5185c5830e917ffe48284b0995eed13",
-                "reference": "d27aa064c5185c5830e917ffe48284b0995eed13",
+                "url": "https://api.github.com/repos/zendframework/zend-diagnostics/zipball/bb03241c503fdf4d6d420e06653a8b65a10b239d",
+                "reference": "bb03241c503fdf4d6d420e06653a8b65a10b239d",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6|^7.0"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
                 "doctrine/migrations": "^1.0",
-                "guzzle/http": "^3.0",
-                "guzzle/plugin-mock": "^3.0",
+                "guzzlehttp/guzzle": "^5.3.2 || ^6.3.3",
                 "mikey179/vfsstream": "^1.6",
                 "php-amqplib/php-amqplib": "^2.0",
-                "phpunit/phpunit": "^4.7|^5.0",
+                "phpunit/phpunit": "^5.7.27 || 6.5.8 || ^7.1.2",
                 "predis/predis": "^1.0",
                 "sensiolabs/security-checker": "^1.3",
-                "symfony/yaml": "^2.7|^3.0|^4.0",
+                "symfony/yaml": "^2.7 || ^3.0 || ^4.0",
+                "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-loader": "^2.0"
             },
             "suggest": {
                 "doctrine/migrations": "Required by Check\\DoctrineMigration",
                 "ext-bcmath": "Required by Check\\CpuPerformance",
-                "guzzle/http": "Required by Check\\GuzzleHttpService",
+                "guzzlehttp/guzzle": "Required by Check\\GuzzleHttpService",
                 "predis/predis": "Required by Check\\Redis",
                 "sensiolabs/security-checker": "Required by Check\\SecurityAdvisory",
                 "symfony/yaml": "Required by Check\\YamlFile",
@@ -9619,13 +9722,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "ZendDiagnostics\\": "src/",
-                    "ZendDiagnosticsTest\\": "tests/"
+                "psr-4": {
+                    "ZendDiagnostics\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -9633,13 +9735,15 @@
                 "BSD-3-Clause"
             ],
             "description": "A set of components for performing diagnostic tests in PHP applications",
-            "homepage": "https://github.com/zendframework/ZendDiagnostics",
+            "homepage": "https://github.com/zendframework/zend-diagnostics",
             "keywords": [
+                "ZendFramework",
                 "diagnostics",
                 "php",
-                "test"
+                "test",
+                "zf"
             ],
-            "time": "2017-12-13T08:36:13+00:00"
+            "time": "2018-06-25T22:03:27+00:00"
         }
     ],
     "packages-dev": [
@@ -10014,7 +10118,7 @@
         },
         {
             "name": "symfony/dotenv",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dotenv.git",
@@ -10071,16 +10175,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v3.4.11",
+            "version": "v3.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "63cdae00a75862fa543b765ba63d55f6b6397d0c"
+                "reference": "8a21eb6bedad38bf1f15d529c65eb9e17d0242fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/63cdae00a75862fa543b765ba63d55f6b6397d0c",
-                "reference": "63cdae00a75862fa543b765ba63d55f6b6397d0c",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/8a21eb6bedad38bf1f15d529c65eb9e17d0242fd",
+                "reference": "8a21eb6bedad38bf1f15d529c65eb9e17d0242fd",
                 "shasum": ""
             },
             "require": {
@@ -10133,7 +10237,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2018-05-16T12:49:49+00:00"
+            "time": "2018-06-10T07:25:02+00:00"
         },
         {
             "name": "symfony/polyfill-php72",

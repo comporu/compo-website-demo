@@ -1,2 +1,6 @@
 imports:
     - { resource: '@CompoCoreBundle/Resources/config/app/config.yml' }
+
+bazinga_faker:
+    orm: doctrine
+    locale: ru_RU

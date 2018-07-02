@@ -4,12 +4,22 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && ap
     openssl \
     git \
     unzip \
-    libicu-dev \
-    libpng-dev \
     gnupg \
     sudo \
+    supervisor \
     libmemcached-dev \
-    supervisor
+    libicu-dev \
+    libpng-dev \
+    libfreetype6-dev \
+    libjpeg-dev \
+    libxpm-dev \
+    libwebp-dev
+
+RUN docker-php-ext-configure gd \
+    --with-freetype-dir=/usr/include/ \
+    --with-jpeg-dir=/usr/include/ \
+    --with-xpm-dir=/usr/include \
+    --with-webp-dir=/usr/include/
 
 # Type docker-php-ext-install to see available extensions
 RUN docker-php-ext-install pdo pdo_mysql intl gd bcmath zip opcache

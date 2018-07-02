@@ -1,0 +1,44 @@
+services:
+  compo_website_demo.fixture.advantages:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadAdvantagesData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.articles:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadArticlesData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.banner:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadBannerData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.contacts:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadContactsData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.faq:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadFaqData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.feedback:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadFeedbackData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.menu:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadMenuData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.news:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadNewsData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.page:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadPageData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.redirect:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadRedirectData
+      tags: ['doctrine.fixture.orm']
+
+  compo_website_demo.fixture.social:
+      class: CompoWebsiteDemo\AppBundle\DataFixtures\LoadSocialData
+      tags: ['doctrine.fixture.orm']

@@ -60,7 +60,19 @@ docker-compose restart nginx
 ```
 
 
-Visit https://localhost:8080/
+Visit https://localhost/
+
+Admin https://localhost/admin
+
+Default login/password for dev environment: website/website
+
+Default login/password for admin: admin/admin
+
+PhpMyadmin
+
+```bash
+docker run --name phpmyadmin --net compowebsitedemo_default --link db:db -p 8080:80 phpmyadmin/phpmyadmin
+```
 
 
 ## Documentation

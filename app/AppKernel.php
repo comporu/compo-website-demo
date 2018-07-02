@@ -17,6 +17,7 @@ class AppKernel extends CoreKernel
         $bundles = parent::registerBundles();
 
         $bundles[] = new \CompoWebsiteDemo\AppBundle\AppBundle();
+        $bundles[] = new \Bazinga\Bundle\FakerBundle\BazingaFakerBundle();
 
         return $bundles;
     }

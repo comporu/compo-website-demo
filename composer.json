@@ -39,7 +39,8 @@
     },
     "require": {
         "php": ">=7.2.0",
-        "comporu/compo-core": "3.3.x-dev"
+        "comporu/compo-core": "3.3.x-dev",
+        "willdurand/faker-bundle": "^1.4"
     },
     "require-dev": {
         "doctrine/doctrine-fixtures-bundle": "^3.0",
