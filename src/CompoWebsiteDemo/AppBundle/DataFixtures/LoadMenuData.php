@@ -67,12 +67,21 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
         $menu = new Menu();
         $menu->setName('Main');
 
+        $menuItemRoot = new MenuItem();
+        $menuItemRoot->setName('Main');
+        $menuItemRoot->setType('url');
+        $menuItemRoot->setEnabled(true);
+        $menuItemRoot->setMenu($menu);
+        $manager->persist($menuItemRoot);
+
+
         $menuItem = new MenuItem();
         $menuItem->setName('Articles');
         $menuItem->setUrl('/articles/');
         $menuItem->setType('url');
         $menuItem->setEnabled(true);
         $menuItem->setMenu($menu);
+        $menuItem->setParent($menuItemRoot);
         $manager->persist($menuItem);
 
         $menuItem = new MenuItem();
@@ -81,6 +90,7 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
         $menuItem->setType('url');
         $menuItem->setEnabled(true);
         $menuItem->setMenu($menu);
+        $menuItem->setParent($menuItemRoot);
         $manager->persist($menuItem);
 
         $menuItem = new MenuItem();
@@ -89,6 +99,7 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
         $menuItem->setType('url');
         $menuItem->setEnabled(true);
         $menuItem->setMenu($menu);
+        $menuItem->setParent($menuItemRoot);
         $manager->persist($menuItem);
 
         $manager->persist($menu);
