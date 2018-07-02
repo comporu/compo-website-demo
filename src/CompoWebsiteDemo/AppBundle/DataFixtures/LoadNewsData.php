@@ -11,11 +11,9 @@
 
 namespace CompoWebsiteDemo\AppBundle\DataFixtures;
 
-
 use Compo\NewsBundle\Entity\News;
 use Compo\NewsBundle\Entity\NewsTag;
 use Compo\Sonata\MediaBundle\Entity\Media;
-
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -23,7 +21,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadNewsData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
@@ -86,8 +84,7 @@ class LoadNewsData extends AbstractFixture implements ContainerAwareInterface, O
 
         $manager->flush();
 
-
-        for ($i = 1; $i <= $count; $i++) {
+        for ($i = 1; $i <= $count; ++$i) {
             $media = new Media();
 
             $media->setBinaryContent($faker->image());
@@ -106,7 +103,7 @@ class LoadNewsData extends AbstractFixture implements ContainerAwareInterface, O
             $text = '';
             $count_p = random_int(4, 10);
 
-            for ($p = 4; $p <= $count_p; $p++) {
+            for ($p = 4; $p <= $count_p; ++$p) {
                 $text .= '<p>' . $faker->text(random_int(300, 600)) . '</p>';
             }
 
@@ -119,7 +116,7 @@ class LoadNewsData extends AbstractFixture implements ContainerAwareInterface, O
 
             shuffle($tags);
 
-            for ($t = 1; $t <= $tagsCount; $t++) {
+            for ($t = 1; $t <= $tagsCount; ++$t) {
                 $news->addTag($tags[$t]);
             }
 

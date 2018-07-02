@@ -10,14 +10,14 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 /**
- * Class InstallCommand
+ * Class InstallCommand.
  */
 class InstallCommand extends ContainerAwareCommand
 {
     /**
      * {@inheritdoc}
      */
-    protected function configure():void
+    protected function configure(): void
     {
         $this
             ->setName('compo:webiste-demo:install')
@@ -38,10 +38,10 @@ class InstallCommand extends ContainerAwareCommand
         $application->find('doctrine:database:drop')->run(
             new ArrayInput(
                 [
-                    '--env'    => 'dev',
-                    '--verbose'    => true,
-                    '--no-debug'    => true,
-                    '--force' => true
+                    '--env' => 'dev',
+                    '--verbose' => true,
+                    '--no-debug' => true,
+                    '--force' => true,
                 ]
             ),
             $output
@@ -50,10 +50,10 @@ class InstallCommand extends ContainerAwareCommand
         $application->find('doctrine:database:create')->run(
             new ArrayInput(
                 [
-                    '--env'    => 'dev',
-                    '--verbose'    => true,
-                    '--no-debug'    => true,
-                    '--if-not-exists' => true
+                    '--env' => 'dev',
+                    '--verbose' => true,
+                    '--no-debug' => true,
+                    '--if-not-exists' => true,
                 ]
             ),
             $output
@@ -62,11 +62,11 @@ class InstallCommand extends ContainerAwareCommand
         $application->find('doctrine:schema:update')->run(
             new ArrayInput(
                 [
-                    '--env'    => 'dev',
-                    '--verbose'    => true,
-                    '--no-debug'    => true,
+                    '--env' => 'dev',
+                    '--verbose' => true,
+                    '--no-debug' => true,
                     '--force' => true,
-                    '--dump-sql' => false
+                    '--dump-sql' => false,
                 ]
             ),
             $output
@@ -75,9 +75,9 @@ class InstallCommand extends ContainerAwareCommand
         $application->find('fos:user:create')->run(
             new ArrayInput(
                 [
-                    '--env'    => 'dev',
-                    '--verbose'    => true,
-                    '--no-debug'    => true,
+                    '--env' => 'dev',
+                    '--verbose' => true,
+                    '--no-debug' => true,
                     '--super-admin' => true,
                     'username' => 'admin',
                     'email' => $this->getFaker()->safeEmail,
@@ -90,9 +90,9 @@ class InstallCommand extends ContainerAwareCommand
         $application->find('sonata:page:create-site')->run(
             new ArrayInput(
                 [
-                    '--env'    => 'dev',
-                    '--verbose'    => true,
-                    '--no-debug'    => true,
+                    '--env' => 'dev',
+                    '--verbose' => true,
+                    '--no-debug' => true,
                     '--enabled' => true,
                     '--name' => 'WebSiteDemo',
                     '--locale' => '-',
@@ -130,16 +130,14 @@ class InstallCommand extends ContainerAwareCommand
         $application->find('doctrine:fixtures:load')->run(
             new ArrayInput(
                 [
-                    '--env'    => 'dev',
-                    '--verbose'    => true,
-                    '--no-debug'    => true,
+                    '--env' => 'dev',
+                    '--verbose' => true,
+                    '--no-debug' => true,
                     '--append' => true,
                 ]
             ),
             $output
         );
-
-
 
         $process = new Process('bin/console sonata:page:update-core-routes --env=dev --verbose --no-debug --site=all');
         $process->setWorkingDirectory($projectDir);

@@ -20,7 +20,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadPageData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
@@ -83,9 +83,6 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         $this->createHomePageSocialBundleBlock();
     }
 
-    /**
-     *
-     */
     public function createHomePage()
     {
         $pageManager = $this->getPageManager();
@@ -135,9 +132,6 @@ class LoadPageData extends AbstractFixture implements ContainerAwareInterface, O
         return $this->container->get('sonata.page.block_interactor');
     }
 
-    /**
-     *
-     */
     public function createHomePageWellcomeBlock()
     {
         $pageManager = $this->getPageManager();
@@ -166,6 +160,7 @@ CONTENT
     /**
      * @param $name
      * @param $content
+     *
      * @return \Compo\Sonata\PageBundle\Entity\Block
      */
     public function createFormatterBlock($name, $content)
@@ -188,9 +183,6 @@ CONTENT
         return $text;
     }
 
-    /**
-     *
-     */
     public function createHomePageGitHubBlock()
     {
         $pageManager = $this->getPageManager();
@@ -225,9 +217,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageDocumentationBlock()
     {
         $pageManager = $this->getPageManager();
@@ -258,9 +247,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageAdminBlock()
     {
         $pageManager = $this->getPageManager();
@@ -296,9 +282,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageCoreBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -340,9 +323,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageSonataBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -373,9 +353,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageAdvantagesBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -406,7 +383,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $advantages */
@@ -424,9 +400,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageArticlesBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -457,7 +430,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $lastArticles */
@@ -474,9 +446,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageBannerBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -507,7 +476,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $banner */
@@ -525,9 +493,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageContactsBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -558,7 +523,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $contacts */
@@ -572,13 +536,9 @@ CONTENT
 
         $containerBlock->addChildren($contacts);
 
-
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageFaqBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -620,7 +580,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $lastFaq */
@@ -634,13 +593,9 @@ CONTENT
 
         $containerBlock->addChildren($lastFaq);
 
-
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageFeedbackBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -676,7 +631,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $feedback */
@@ -694,9 +648,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageImportBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -727,9 +678,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageMenuBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -763,9 +711,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageNewsBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -796,7 +741,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $lastNews */
@@ -813,9 +757,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageNotificationBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -846,9 +787,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePagePageCodeBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -879,9 +817,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageRedirectBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -912,9 +847,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageSeoBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -945,9 +877,6 @@ CONTENT
         $pageManager->save($page);
     }
 
-    /**
-     *
-     */
     public function createHomePageSocialBundleBlock()
     {
         $pageManager = $this->getPageManager();
@@ -978,7 +907,6 @@ CONTENT
 
         $containerBlock->addChildren($formatterBlock);
 
-
         $blockManager = $this->getBlockManager();
 
         /** @var PageBlockInterface $social */
@@ -991,7 +919,6 @@ CONTENT
         $social->setPosition(\count($containerBlock->getChildren()) + 1);
 
         $containerBlock->addChildren($social);
-
 
         $pageManager->save($page);
     }

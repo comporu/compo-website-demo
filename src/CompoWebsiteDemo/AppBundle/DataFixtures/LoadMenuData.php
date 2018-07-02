@@ -11,7 +11,6 @@
 
 namespace CompoWebsiteDemo\AppBundle\DataFixtures;
 
-
 use Compo\MenuBundle\Entity\Menu;
 use Compo\MenuBundle\Entity\MenuItem;
 use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -21,7 +20,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
@@ -92,17 +91,14 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
         $menuItem->setMenu($menu);
         $manager->persist($menuItem);
 
-
         $manager->persist($menu);
 
         $manager->flush();
-
 
         $settings = $this->container->get('sylius.settings_manager')->load('compo_core_settings');
 
         $settings->set('header_menu', 1);
 
         $this->container->get('sylius.settings_manager')->save($settings);
-
     }
 }

@@ -11,9 +11,7 @@
 
 namespace CompoWebsiteDemo\AppBundle\DataFixtures;
 
-
 use Compo\ContactsBundle\Entity\Contacts;
-
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -21,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadContactsData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {

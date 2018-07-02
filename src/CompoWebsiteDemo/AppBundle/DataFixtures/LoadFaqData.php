@@ -11,9 +11,7 @@
 
 namespace CompoWebsiteDemo\AppBundle\DataFixtures;
 
-
 use Compo\FaqBundle\Entity\Faq;
-
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -21,7 +19,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadFaqData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
@@ -69,7 +67,7 @@ class LoadFaqData extends AbstractFixture implements ContainerAwareInterface, Or
 
         $count = random_int(30, 60);
 
-        for ($i = 1; $i <= $count; $i++) {
+        for ($i = 1; $i <= $count; ++$i) {
             $faq = new Faq();
             $faq->setEnabled(true);
             $faq->setEmail($faker->safeEmail);

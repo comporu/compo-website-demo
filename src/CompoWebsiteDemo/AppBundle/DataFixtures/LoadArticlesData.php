@@ -20,7 +20,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadArticlesData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
@@ -69,7 +69,7 @@ class LoadArticlesData extends AbstractFixture implements ContainerAwareInterfac
 
         $count = random_int(25, 35);
 
-        for ($i = 1; $i <= $count; $i++) {
+        for ($i = 1; $i <= $count; ++$i) {
             $media = new Media();
             $media->setBinaryContent($faker->image());
             $media->setEnabled(true);

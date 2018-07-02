@@ -11,7 +11,6 @@
 
 namespace CompoWebsiteDemo\AppBundle\DataFixtures;
 
-
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -19,7 +18,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadRedirectData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
@@ -63,6 +62,5 @@ class LoadRedirectData extends AbstractFixture implements ContainerAwareInterfac
      */
     public function load(ObjectManager $manager)
     {
-
     }
 }

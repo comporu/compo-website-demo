@@ -21,7 +21,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadBannerData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {

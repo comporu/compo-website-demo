@@ -21,7 +21,7 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
- * Class LoadPageData
+ * Class LoadPageData.
  */
 class LoadAdvantagesData extends AbstractFixture implements ContainerAwareInterface, OrderedFixtureInterface
 {
@@ -75,7 +75,7 @@ class LoadAdvantagesData extends AbstractFixture implements ContainerAwareInterf
             1 => 'One',
             2 => 'Two',
             3 => 'Three',
-            4 => 'Four'
+            4 => 'Four',
         ];
 
         foreach ($advantagesData as $id => $name) {
