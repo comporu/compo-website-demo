@@ -1,10 +1,8 @@
 <?php
 
 /*
- * This file is part of the Sonata package.
- *
- * (c) Thomas Rabaix <thomas.rabaix@sonata-project.org>
- *
+ * This file is part of the CompoSymfonyCms package.
+ * (c) Compo.ru <info@compo.ru>
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
@@ -73,7 +71,6 @@ class LoadMenuData extends AbstractFixture implements ContainerAwareInterface, O
         $menuItemRoot->setEnabled(true);
         $menuItemRoot->setMenu($menu);
         $manager->persist($menuItemRoot);
-
 
         $menuItem = new MenuItem();
         $menuItem->setName('Articles');
