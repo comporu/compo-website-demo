@@ -614,12 +614,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/comporu/compo-core.git",
-                "reference": "4d958b43beaf1c8f2e752adc9086eaed964df90d"
+                "reference": "c1044580cb5a63a5a0ebfffea20a1deee72220d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/comporu/compo-core/zipball/4d958b43beaf1c8f2e752adc9086eaed964df90d",
-                "reference": "4d958b43beaf1c8f2e752adc9086eaed964df90d",
+                "url": "https://api.github.com/repos/comporu/compo-core/zipball/c1044580cb5a63a5a0ebfffea20a1deee72220d9",
+                "reference": "c1044580cb5a63a5a0ebfffea20a1deee72220d9",
                 "shasum": ""
             },
             "require": {
@@ -721,7 +721,7 @@
                 "sonata",
                 "symfony"
             ],
-            "time": "2018-06-28T10:35:27+00:00"
+            "time": "2018-07-02T08:11:46+00:00"
         },
         {
             "name": "composer/ca-bundle",
