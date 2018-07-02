@@ -8,7 +8,7 @@ Website demo based on CompoSymfonyCms.
 
 Branch | Travis | Buddy | Site |
 ------ | ------ | ----- | ---- |
-develop| [![Build Status](https://travis-ci.com/comporu/compo-website-demo.svg?token=Wm83L8fq2&branch=develop)](https://travis-ci.com/comporu/compo-website-demo) | [![buddy pipeline](https://app.buddy.works/comporu/compo-website-demo/pipelines/pipeline/137500/badge.svg?token=fc1497672c816787d99074f21845ccc61876 "buddy pipeline")](https://app.buddy.works/comporu/compo-website-demo/pipelines/pipeline/13700) | http://website.compo-symfony-cms.ru/ |
+develop| [![Build Status](https://travis-ci.com/comporu/compo-website-demo.svg?token=Wm83L8fqS3rA3qLbfpD2&branch=master)](https://travis-ci.com/comporu/compo-website-demo) | [![buddy pipeline](https://app.buddy.works/comporu/compo-website-demo/pipelines/pipeline/142694/badge.svg?token=fc1497672c816787d99074f21845ccc6843d7bb0f1151cd28e3d2d9a99711876 "buddy pipeline")](https://app.buddy.works/comporu/compo-website-demo/pipelines/pipeline/142694) | http://website.compo-symfony-cms.ru/ |
 
 ## Installation
 
