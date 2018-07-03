@@ -51,6 +51,13 @@ services:
       - "${SERVER_NAME}:127.0.0.1"
     volumes:
       - ./:/var/www/html
+      - letsencrypt:/etc/letsencrypt
+
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./:/var/www/html
+      - letsencrypt:/etc/letsencrypt
 
   memcached:
     image: memcached
@@ -71,3 +78,6 @@ services:
       memlock:
         soft: -1
         hard: -1
+
+volumes:
+  letsencrypt: ~
