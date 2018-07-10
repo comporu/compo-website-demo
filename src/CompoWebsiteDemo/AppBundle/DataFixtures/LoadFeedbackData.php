@@ -10,6 +10,7 @@
 namespace CompoWebsiteDemo\AppBundle\DataFixtures;
 
 use Compo\FeedbackBundle\Entity\Feedback;
+use Compo\FeedbackBundle\Entity\FeedbackTag;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
@@ -64,6 +65,33 @@ class LoadFeedbackData extends AbstractFixture implements ContainerAwareInterfac
         $faker = $this->getFaker();
 
         $count = random_int(30, 60);
+
+        $tags = [
+            [
+                'name' => 'Перезвонить',
+                'color' => '#ff8a00'
+            ],
+            [
+                'name' => 'Отвечено',
+                'color' => '#00a903'
+            ],
+            [
+                'name' => 'Важно',
+                'color' => '#e90007'
+            ],
+        ];
+
+        foreach ($tags as $key => $item) {
+            $tag = new FeedbackTag();
+            $tag->setName($item['name']);
+            $tag->setColor($item['color']);
+
+            $manager->persist($tag);
+
+            $tags[$key]['object'] = $tag;
+        }
+
+        $manager->flush();
 
         for ($i = 1; $i <= $count; ++$i) {
             $faq = new Feedback();

@@ -78,6 +78,7 @@ class LoadArticlesData extends AbstractFixture implements ContainerAwareInterfac
 
             $article = new Articles();
             $article->setEnabled(true);
+            $article->setViews(random_int(25, 135));
             $article->setName($faker->sentence(6));
             $article->setDescription($faker->sentence(random_int(30, 60)));
             $article->setBody($faker->sentence(random_int(300, 600)));

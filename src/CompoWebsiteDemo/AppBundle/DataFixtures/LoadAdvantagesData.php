@@ -70,28 +70,31 @@ class LoadAdvantagesData extends AbstractFixture implements ContainerAwareInterf
         $advantages->setName('Main');
 
         $advantagesData = [
-            1 => 'One',
-            2 => 'Two',
-            3 => 'Three',
-            4 => 'Four',
+            1 => ['name' => 'One', 'url' => ''],
+            2 => ['name' => 'Two', 'url' => ''],
+            3 => ['name' => 'Three', 'url' => ''],
+            4 => ['name' => 'Compo', 'url' => 'http://compo.ru'],
         ];
 
-        foreach ($advantagesData as $id => $name) {
+        foreach ($advantagesData as $id => $item) {
             $media = new Media();
             $media->setBinaryContent(__DIR__ . '/../Resources/public/fixtures/advantages_' . $id . '.png');
             $media->setEnabled(true);
             $media->setName('advantages_' . $id . '.png');
             $media->setContext('default');
             $media->setProviderName('sonata.media.provider.image');
+
             $mediaManager->save($media, false);
 
             $advantagesItem = new AdvantagesItem();
-            $advantagesItem->setName($name);
+            $advantagesItem->setName($item['name']);
             $advantagesItem->setEnabled(true);
-            $advantagesItem->setAdvantages($advantages);
             $advantagesItem->setImage($media);
+            $advantagesItem->setDescription($item['name'] . ' - Description');
+            $advantagesItem->setTitle($item['name'] . ' - Title');
+            $advantagesItem->setUrl($item['url']);
 
-            $manager->persist($advantagesItem);
+            $advantages->addItem($advantagesItem);
         }
 
         $manager->persist($advantages);

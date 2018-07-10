@@ -51,14 +51,6 @@ class LoadBannerData extends AbstractFixture implements ContainerAwareInterface,
     }
 
     /**
-     * @return \Sonata\MediaBundle\Model\MediaManagerInterface
-     */
-    public function getMediaManager()
-    {
-        return $this->container->get('sonata.media.manager.media');
-    }
-
-    /**
      * {@inheritdoc}
      */
     public function load(ObjectManager $manager)
@@ -68,11 +60,31 @@ class LoadBannerData extends AbstractFixture implements ContainerAwareInterface,
         $banner = new Banner();
 
         $banner->setName('Main');
-
-        $bannerItem = new BannerItem();
-        $bannerItem->setName('One');
-        $bannerItem->setEnabled(true);
-        $bannerItem->setBanner($banner);
+        $banner->setOptions('{
+  centerMode: true,
+  centerPadding: \'60px\',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: \'40px\',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: \'40px\',
+        slidesToShow: 1
+      }
+    }
+  ]
+}');
 
         $media = new Media();
         $media->setBinaryContent(__DIR__ . '/../Resources/public/fixtures/banner_1.jpg');
@@ -82,29 +94,44 @@ class LoadBannerData extends AbstractFixture implements ContainerAwareInterface,
         $media->setProviderName('sonata.media.provider.image');
         $mediaManager->save($media, false);
 
+        $bannerItem = new BannerItem();
+        $bannerItem->setName('One');
+        $bannerItem->setEnabled(true);
+        $bannerItem->setTitle('One - Title');
+        $bannerItem->setDescription('One - Description');
+        $bannerItem->setUrl('');
         $bannerItem->setImage($media);
 
-        $manager->persist($bannerItem);
+        $banner->addItem($bannerItem);
+
+        $media = new Media();
+        $media->setBinaryContent(__DIR__ . '/../Resources/public/fixtures/banner_2.png');
+        $media->setEnabled(true);
+        $media->setName('banner_2.png');
+        $media->setContext('default');
+        $media->setProviderName('sonata.media.provider.image');
+        $mediaManager->save($media, false);
 
         $bannerItem = new BannerItem();
         $bannerItem->setName('Two');
         $bannerItem->setEnabled(true);
-        $bannerItem->setBanner($banner);
+        $bannerItem->setTitle('Two - Title');
+        $bannerItem->setDescription('Two - Description');
+        $bannerItem->setUrl('http://compo.ru');
+        $bannerItem->setImage($media);
 
-        $media2 = new Media();
-        $media2->setBinaryContent(__DIR__ . '/../Resources/public/fixtures/banner_2.png');
-        $media2->setEnabled(true);
-        $media2->setName('banner_2.png');
-        $media2->setContext('default');
-        $media2->setProviderName('sonata.media.provider.image');
-        $mediaManager->save($media2, false);
-
-        $bannerItem->setImage($media2);
-
-        $manager->persist($bannerItem);
+        $banner->addItem($bannerItem);
 
         $manager->persist($banner);
 
         $manager->flush();
+    }
+
+    /**
+     * @return \Sonata\MediaBundle\Model\MediaManagerInterface
+     */
+    public function getMediaManager()
+    {
+        return $this->container->get('sonata.media.manager.media');
     }
 }

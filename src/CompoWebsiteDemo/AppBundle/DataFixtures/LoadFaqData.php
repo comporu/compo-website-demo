@@ -74,6 +74,7 @@ class LoadFaqData extends AbstractFixture implements ContainerAwareInterface, Or
             $faq->setAnswer($faker->sentence(random_int(100, 300)));
             $faq->setDescription($faker->sentence(random_int(30, 60)));
             $faq->setPublicationAt($faker->dateTimeBetween('-30 days', '-1 days'));
+            $faq->setViews(random_int(100, 300));
 
             $manager->persist($faq);
         }

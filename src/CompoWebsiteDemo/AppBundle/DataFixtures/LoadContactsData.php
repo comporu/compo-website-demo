@@ -71,8 +71,8 @@ class LoadContactsData extends AbstractFixture implements ContainerAwareInterfac
         $contacts->setWorktime('10:00 - 19:00');
         $contacts->setAddress($faker->address);
         $contacts->setBankProps($faker->creditCardType . ': ' . $faker->creditCardNumber);
-        $contacts->setCix(55.84325207);
-        $contacts->setCiy(37.48890304);
+        $contacts->setLatitude(55.84325207);
+        $contacts->setLongitude(37.48890304);
 
         $manager->persist($contacts);
         $manager->flush();

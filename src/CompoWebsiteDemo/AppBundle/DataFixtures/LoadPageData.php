@@ -360,6 +360,7 @@ CONTENT
 
         $containerBlock = $page->getContainerByCode('content');
 
+        /*
         $formatterBlock = $this->createFormatterBlock('AdvantagesBundle',
             <<<CONTENT
 <div class="panel panel-warning">
@@ -380,6 +381,7 @@ CONTENT
         $formatterBlock->setPosition(\count($containerBlock->getChildren()) + 1);
 
         $containerBlock->addChildren($formatterBlock);
+        */
 
         $blockManager = $this->getBlockManager();
 
@@ -407,6 +409,7 @@ CONTENT
 
         $containerBlock = $page->getContainerByCode('content');
 
+        /*
         $formatterBlock = $this->createFormatterBlock('ArticlesBundle',
             <<<CONTENT
 <div class="panel panel-warning">
@@ -427,6 +430,7 @@ CONTENT
         $formatterBlock->setPosition(\count($containerBlock->getChildren()) + 1);
 
         $containerBlock->addChildren($formatterBlock);
+        */
 
         $blockManager = $this->getBlockManager();
 
@@ -453,6 +457,7 @@ CONTENT
 
         $containerBlock = $page->getContainerByCode('content');
 
+        /*
         $formatterBlock = $this->createFormatterBlock('BannerBundle',
             <<<CONTENT
 <div class="panel panel-warning">
@@ -473,6 +478,7 @@ CONTENT
         $formatterBlock->setPosition(\count($containerBlock->getChildren()) + 1);
 
         $containerBlock->addChildren($formatterBlock);
+        */
 
         $blockManager = $this->getBlockManager();
 
@@ -488,6 +494,22 @@ CONTENT
 
         $containerBlock->addChildren($banner);
 
+
+        /** @var PageBlockInterface $banner */
+        $banner = $blockManager->create();
+
+        $banner->setName('Banner 2');
+        $banner->setType('compo_banner.block.service.banner');
+        $banner->setSetting('id', 1);
+        $banner->setEnabled(true);
+        $banner->setSetting('template', 'CompoBannerBundle:Block:slick.html.twig');
+
+        $banner->setPage($page);
+        $banner->setPosition(\count($containerBlock->getChildren()) + 1);
+
+        $containerBlock->addChildren($banner);
+
+
         $pageManager->save($page);
     }
 
@@ -500,6 +522,7 @@ CONTENT
 
         $containerBlock = $page->getContainerByCode('content');
 
+        /*
         $formatterBlock = $this->createFormatterBlock('ContactsBundle',
             <<<CONTENT
 <div class="panel panel-warning">
@@ -520,6 +543,7 @@ CONTENT
         $formatterBlock->setPosition(\count($containerBlock->getChildren()) + 1);
 
         $containerBlock->addChildren($formatterBlock);
+        */
 
         $blockManager = $this->getBlockManager();
 

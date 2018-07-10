@@ -8,39 +8,31 @@
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
-            "version": "v1.0.23",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/beberlei/DoctrineExtensions.git",
-                "reference": "dacd609f1fefb0e59054f2d09be594dfed9a46a6"
+                "reference": "5b1d5e4d97cf908baa353755533f2f3174185769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/beberlei/DoctrineExtensions/zipball/dacd609f1fefb0e59054f2d09be594dfed9a46a6",
-                "reference": "dacd609f1fefb0e59054f2d09be594dfed9a46a6",
+                "url": "https://api.github.com/repos/beberlei/DoctrineExtensions/zipball/5b1d5e4d97cf908baa353755533f2f3174185769",
+                "reference": "5b1d5e4d97cf908baa353755533f2f3174185769",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": ">=5.4"
             },
             "require-dev": {
-                "doctrine/orm": "~2.1",
+                "doctrine/orm": "^2.5",
+                "friendsofphp/php-cs-fixer": "^2.2.19",
                 "nesbot/carbon": "*",
-                "phpunit/phpunit": "~4.5",
-                "symfony/yaml": "~2.6",
-                "zf1/zend-date": "~1.12",
-                "zf1/zend-registry": "~1.12"
-            },
-            "suggest": {
-                "nesbot/carbon": "Alternative to DateTime",
-                "zf1/zend-date": "Alternative to DateTime"
+                "phpunit/phpunit": "^4.5",
+                "symfony/yaml": "^2.6",
+                "zf1/zend-date": "^1.12",
+                "zf1/zend-registry": "^1.12"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "DoctrineExtensions\\": "src/"
@@ -66,7 +58,7 @@
                 "doctrine",
                 "orm"
             ],
-            "time": "2018-05-28T08:54:30+00:00"
+            "time": "2018-07-06T10:33:58+00:00"
         },
         {
             "name": "behat/behat",
@@ -614,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/comporu/compo-core.git",
-                "reference": "23c13b03689d71a5d389c856d0cd96baf8659981"
+                "reference": "0b1c1e962b7984b511db05fd3a59c067b6f59b06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/comporu/compo-core/zipball/23c13b03689d71a5d389c856d0cd96baf8659981",
-                "reference": "23c13b03689d71a5d389c856d0cd96baf8659981",
+                "url": "https://api.github.com/repos/comporu/compo-core/zipball/0b1c1e962b7984b511db05fd3a59c067b6f59b06",
+                "reference": "0b1c1e962b7984b511db05fd3a59c067b6f59b06",
                 "shasum": ""
             },
             "require": {
@@ -721,7 +713,7 @@
                 "sonata",
                 "symfony"
             ],
-            "time": "2018-07-03T05:45:40+00:00"
+            "time": "2018-07-10T06:22:57+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -4801,16 +4793,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.15",
+            "version": "v2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09"
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/10bcb46e8f3d365170f6de9d05245aa066b81f09",
-                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/29af24f25bab834fcbb38ad2a69fa93b867e070d",
+                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d",
                 "shasum": ""
             },
             "require": {
@@ -4846,7 +4838,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-06-08T15:26:40+00:00"
+            "time": "2018-07-04T16:31:37+00:00"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -6099,16 +6091,16 @@
         },
         {
             "name": "sonata-project/core-bundle",
-            "version": "3.10.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataCoreBundle.git",
-                "reference": "352275323c28f921c57312d5fb609b693a8bc8e0"
+                "reference": "08148e007c92fefc4315483eece38acade01614f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/352275323c28f921c57312d5fb609b693a8bc8e0",
-                "reference": "352275323c28f921c57312d5fb609b693a8bc8e0",
+                "url": "https://api.github.com/repos/sonata-project/SonataCoreBundle/zipball/08148e007c92fefc4315483eece38acade01614f",
+                "reference": "08148e007c92fefc4315483eece38acade01614f",
                 "shasum": ""
             },
             "require": {
@@ -6172,7 +6164,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2018-06-13T04:16:25+00:00"
+            "time": "2018-07-07T22:27:10+00:00"
         },
         {
             "name": "sonata-project/dashboard-bundle",
@@ -6500,16 +6492,16 @@
         },
         {
             "name": "sonata-project/exporter",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/exporter.git",
-                "reference": "c20cb476179d6b6e5902859c7be9512198e5a552"
+                "reference": "6dbea3379447f672f46fccd7e29210cc1246aea9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/c20cb476179d6b6e5902859c7be9512198e5a552",
-                "reference": "c20cb476179d6b6e5902859c7be9512198e5a552",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/6dbea3379447f672f46fccd7e29210cc1246aea9",
+                "reference": "6dbea3379447f672f46fccd7e29210cc1246aea9",
                 "shasum": ""
             },
             "require": {
@@ -6566,7 +6558,7 @@
                 "export",
                 "xls"
             ],
-            "time": "2018-05-10T11:12:53+00:00"
+            "time": "2018-07-04T16:52:00+00:00"
         },
         {
             "name": "sonata-project/formatter-bundle",
@@ -6728,16 +6720,16 @@
         },
         {
             "name": "sonata-project/media-bundle",
-            "version": "3.14.0",
+            "version": "3.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataMediaBundle.git",
-                "reference": "35635a16729f588df01259ac7c70490c547bb21a"
+                "reference": "3e1e6656ba088f9a315073efb1c40067efbfec59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/35635a16729f588df01259ac7c70490c547bb21a",
-                "reference": "35635a16729f588df01259ac7c70490c547bb21a",
+                "url": "https://api.github.com/repos/sonata-project/SonataMediaBundle/zipball/3e1e6656ba088f9a315073efb1c40067efbfec59",
+                "reference": "3e1e6656ba088f9a315073efb1c40067efbfec59",
                 "shasum": ""
             },
             "require": {
@@ -6848,7 +6840,7 @@
                 "vimeo",
                 "youtube"
             ],
-            "time": "2018-06-26T22:19:49+00:00"
+            "time": "2018-07-06T21:03:23+00:00"
         },
         {
             "name": "sonata-project/notification-bundle",
@@ -7184,16 +7176,16 @@
         },
         {
             "name": "sonata-project/user-bundle",
-            "version": "4.2.2",
+            "version": "4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataUserBundle.git",
-                "reference": "e0eb6e0c7290f93b5e3ef850483233f7e957c454"
+                "reference": "7ea0d13c9e6d44e0f94a8f102d60d6d95ab70529"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/e0eb6e0c7290f93b5e3ef850483233f7e957c454",
-                "reference": "e0eb6e0c7290f93b5e3ef850483233f7e957c454",
+                "url": "https://api.github.com/repos/sonata-project/SonataUserBundle/zipball/7ea0d13c9e6d44e0f94a8f102d60d6d95ab70529",
+                "reference": "7ea0d13c9e6d44e0f94a8f102d60d6d95ab70529",
                 "shasum": ""
             },
             "require": {
@@ -7279,7 +7271,7 @@
                 "sonata",
                 "user"
             ],
-            "time": "2018-06-09T10:38:34+00:00"
+            "time": "2018-07-08T19:32:37+00:00"
         },
         {
             "name": "stecman/symfony-console-completion",
@@ -7520,16 +7512,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.0",
+            "version": "v6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587"
+                "reference": "aa899fef280b1c1aec8d5d4ac069af7f80c89a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587",
-                "reference": "0ff595e1d9d7d1c929b2a5f7b774bbcfbbd81587",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/aa899fef280b1c1aec8d5d4ac069af7f80c89a23",
+                "reference": "aa899fef280b1c1aec8d5d4ac069af7f80c89a23",
                 "shasum": ""
             },
             "require": {
@@ -7575,20 +7567,20 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-07-02T20:24:38+00:00"
+            "time": "2018-07-04T11:12:44+00:00"
         },
         {
             "name": "sylius/registry",
-            "version": "v1.2.0",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Registry.git",
-                "reference": "d55d01b6f3e4b65af3c13fd43f988530f99065e3"
+                "reference": "92b17d82256cc8800ab8ce98c8beb65a009f3202"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Registry/zipball/d55d01b6f3e4b65af3c13fd43f988530f99065e3",
-                "reference": "d55d01b6f3e4b65af3c13fd43f988530f99065e3",
+                "url": "https://api.github.com/repos/Sylius/Registry/zipball/92b17d82256cc8800ab8ce98c8beb65a009f3202",
+                "reference": "92b17d82256cc8800ab8ce98c8beb65a009f3202",
                 "shasum": ""
             },
             "require": {
@@ -7634,20 +7626,20 @@
                 "registry",
                 "services"
             ],
-            "time": "2018-04-23T08:57:51+00:00"
+            "time": "2018-07-04T18:43:51+00:00"
         },
         {
             "name": "sylius/resource",
-            "version": "v1.2.0",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/Resource.git",
-                "reference": "f5f35787c7b78e25a7ecdcc060301ca7b2b80504"
+                "reference": "7db2c877849c5fe03327755d6f8c461a07b42e68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/Resource/zipball/f5f35787c7b78e25a7ecdcc060301ca7b2b80504",
-                "reference": "f5f35787c7b78e25a7ecdcc060301ca7b2b80504",
+                "url": "https://api.github.com/repos/Sylius/Resource/zipball/7db2c877849c5fe03327755d6f8c461a07b42e68",
+                "reference": "7db2c877849c5fe03327755d6f8c461a07b42e68",
                 "shasum": ""
             },
             "require": {
@@ -7655,8 +7647,8 @@
                 "gedmo/doctrine-extensions": "^2.4",
                 "pagerfanta/pagerfanta": "^1.0",
                 "php": "^7.1",
-                "symfony/event-dispatcher": "^3.4|^4.1",
-                "symfony/property-access": "^3.4|^4.1",
+                "symfony/event-dispatcher": "^3.4|^4.1.1",
+                "symfony/property-access": "^3.4|^4.1.1",
                 "winzou/state-machine": "^0.3"
             },
             "require-dev": {
@@ -7705,20 +7697,20 @@
                 "shop",
                 "sylius"
             ],
-            "time": "2018-06-04T18:00:35+00:00"
+            "time": "2018-07-04T18:43:51+00:00"
         },
         {
             "name": "sylius/resource-bundle",
-            "version": "v1.2.0",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sylius/SyliusResourceBundle.git",
-                "reference": "3bf1c4c415d29ced7f4e546441f47fa34956c2ce"
+                "reference": "33664a53968bb733d835a66ba7f1c8d3c91e81b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sylius/SyliusResourceBundle/zipball/3bf1c4c415d29ced7f4e546441f47fa34956c2ce",
-                "reference": "3bf1c4c415d29ced7f4e546441f47fa34956c2ce",
+                "url": "https://api.github.com/repos/Sylius/SyliusResourceBundle/zipball/33664a53968bb733d835a66ba7f1c8d3c91e81b0",
+                "reference": "33664a53968bb733d835a66ba7f1c8d3c91e81b0",
                 "shasum": ""
             },
             "require": {
@@ -7729,15 +7721,15 @@
                 "stof/doctrine-extensions-bundle": "^1.2",
                 "sylius/registry": "^1.2",
                 "sylius/resource": "^1.2",
-                "symfony/config": "^3.4|^4.1",
-                "symfony/expression-language": "^3.4|^4.1",
-                "symfony/form": "^3.4|^4.1",
-                "symfony/framework-bundle": "^3.4|^4.1",
-                "symfony/security-csrf": "^3.4|^4.1",
-                "symfony/templating": "^3.4|^4.1",
-                "symfony/twig-bundle": "^3.4|^4.1",
-                "symfony/validator": "^3.4|^4.1",
-                "symfony/yaml": "^3.4|^4.1",
+                "symfony/config": "^3.4|^4.1.1",
+                "symfony/expression-language": "^3.4|^4.1.1",
+                "symfony/form": "^3.4|^4.1.1",
+                "symfony/framework-bundle": "^3.4|^4.1.1",
+                "symfony/security-csrf": "^3.4|^4.1.1",
+                "symfony/templating": "^3.4|^4.1.1",
+                "symfony/twig-bundle": "^3.4|^4.1.1",
+                "symfony/validator": "^3.4|^4.1.1",
+                "symfony/yaml": "^3.4|^4.1.1",
                 "white-october/pagerfanta-bundle": "^1.0",
                 "willdurand/hateoas-bundle": "^1.2",
                 "winzou/state-machine-bundle": "^0.3"
@@ -7754,7 +7746,7 @@
                 "phpunit/phpunit": "^6.5",
                 "sylius/grid-bundle": "^1.2",
                 "sylius/locale": "^1.2",
-                "symfony/dependency-injection": "^3.4|^4.1",
+                "symfony/dependency-injection": "^3.4|^4.1.1",
                 "twig/twig": "^2.0"
             },
             "suggest": {
@@ -7798,7 +7790,7 @@
                 "storage",
                 "sylius"
             ],
-            "time": "2018-06-11T11:56:48+00:00"
+            "time": "2018-07-08T22:10:13+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -9980,16 +9972,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v2.12.1",
+            "version": "v2.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "beef6cbe6dec7205edcd143842a49f9a691859a6"
+                "reference": "dcc87d5414e9d0bd316fce81a5bedb9ce720b183"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/beef6cbe6dec7205edcd143842a49f9a691859a6",
-                "reference": "beef6cbe6dec7205edcd143842a49f9a691859a6",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/dcc87d5414e9d0bd316fce81a5bedb9ce720b183",
+                "reference": "dcc87d5414e9d0bd316fce81a5bedb9ce720b183",
                 "shasum": ""
             },
             "require": {
@@ -10023,7 +10015,7 @@
                 "php-cs-fixer/phpunit-constraint-isidenticalstring": "^1.0.1",
                 "php-cs-fixer/phpunit-constraint-xmlmatchesxsd": "^1.0.1",
                 "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1",
-                "phpunitgoodpractices/traits": "^1.5",
+                "phpunitgoodpractices/traits": "^1.5.1",
                 "symfony/phpunit-bridge": "^4.0"
             },
             "suggest": {
@@ -10067,7 +10059,7 @@
                 }
             ],
             "description": "A tool to automatically fix PHP code style",
-            "time": "2018-06-10T08:26:56+00:00"
+            "time": "2018-07-06T10:37:40+00:00"
         },
         {
             "name": "php-cs-fixer/diff",
